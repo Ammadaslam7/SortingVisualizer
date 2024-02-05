@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="http://localhost:8000/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <title>Sorting Visualizer</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="free-box">Free</div>
+      <h1>Sorting Visualizer</h1>
+      <h2>Intermediate</h2>
+      <div class="buttons">
+        <button class="button">Merge Sort</button>
+        <button class="button">Quick Sort</button>
+        <button class="button">Heap Sort</button>
+      </div>
+    </div>
+  </div>
+  <div class="upload-options">
+    <div class="checkbox-container">
+      <div class="round">
+        <input type="checkbox" id="randomCheckbox" onchange="showRandomInput()">
+        <label for="randomCheckbox">Random</label>
+      </div>
+      <div class="round">
+        <input type="checkbox" id="manualCheckbox" onchange="showManualInput()">
+        <label for="manualCheckbox">Enter Manually</label>
+      </div>
+    </div>
+  </div>
+  <div class="card-container" id="secondCardContainer">
+    <div class="second-card" id="randomInputCard">
+    </div>
+    <div class="second-card" id="manualInputCard">
+    </div>
+  </div>
+  </div>
+  <div class="circle-container" id="circleContainer">
+  </div>
+
+  <div class="right-buttons">
+    <button class="right-button" onclick="processNumbers()">Sum</button>
+    <button class="right-button" onclick="sort()">Sort</button>
+  </div>
+  <div class="sum-display" id="sumDisplay"></div>
+
+  <div class="image-container">
+    <img src="block.png" alt="Image" class="line-image">
+  </div>
+  <div class="horizontal-line"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
